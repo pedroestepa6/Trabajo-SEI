@@ -50,9 +50,8 @@ from pynq.lib import AxiGPIO
 # input file names
 # ***********************************************************************
 dpu_model   = os.path.abspath("dpu.bit")
-cnn_xmodel  = os.path.join("./"        , "b512_2_5_yolox_nano_pt.xmodel")
-labels_file = os.path.join("./img"     , "coco2017_classes.txt")
-
+cnn_xmodel  = os.path.join("./"        , "modelo.xmodel") #modelo optimizado
+labels_file = os.path.join("./img"     , "personas.txt") # nombre de las personas a reconocer + otra persona
 # ***********************************************************************
 # Prepare the Overlay and load the "cnn.xmodel"
 # ***********************************************************************
